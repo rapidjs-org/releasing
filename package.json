@@ -16,6 +16,7 @@
     "bugs": {
         "url": "https://github.com/rapidjs-org/releasing/issues"
     },
+	"license": "Apache-2.0",
     "main": "./lib/api.js",
     "bin": {
         "rjs-releasing": "./lib/cli.js"
