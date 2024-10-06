@@ -24,6 +24,8 @@
         "./lib/"
     ],
     "scripts": {
-        "test": "echo \"TODO: Implement\" && exit 1"
+        "test:api": "node unit.test.js",
+        "test": "npm run test:api",
+        "test-cli": "./rjs-releasing.sh ./test-package --github --stacktrace"
     }
 }

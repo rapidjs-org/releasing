@@ -1,0 +1,11 @@
+Usage:   rjs-releasing <package-path> [--<arg> [<option>]?]*
+Example: rjs-releasing ./packages/my-package
+
+Flags:
+--github        Open a GitHub release creation for a package tag.
+--stacktrace    Always print the full stack trace of errors.
+
+Options:
+--client        Specify registry client to use ('npm'|'yarn') (default 'npm').
+
+Visit https://github.com/rapidjs-org/releasing for more information.
