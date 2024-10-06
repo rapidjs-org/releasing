@@ -1,6 +1,6 @@
 {
     "name": "@rapidjs.org/releasing",
-    "version": "0.1.0",
+    "version": "0.0.9",
     "description": "Java- and TypeScript package release helper utility (NPM).",
     "author": "Thassilo Martin Schiepanski",
     "homepage": "https://github.com/rapidjs-org/releasing#readme",
@@ -26,6 +26,7 @@
     "scripts": {
         "test:api": "node unit.test.js",
         "test": "npm run test:api",
-        "test-cli": "./rjs-releasing.sh ./test-package --github --stacktrace"
+        "test-cli": "./rjs-releasing.sh ./test-package --github --stacktrace",
+        "release": "./rjs-releasing.sh --github"
     }
 }
