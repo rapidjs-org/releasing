@@ -8,13 +8,15 @@ npm install -D @rapidjs.org/releasing
 
 ## Prerequisites
 
-- [NPM](https://www.npmjs.com) CLI latest
+- [NPM](https://www.npmjs.com) CLI (latest)
 
 ## Usage
 
 ``` console
-(npx) rjs-releasing <package-path>
+(npx) rjs-releasing <package-path>?
 ```
+
+> If no package directory path is specified, the current working directory is used.
 
 | Flag | Description |
 | :- | :- |
@@ -23,7 +25,7 @@ npm install -D @rapidjs.org/releasing
 
 | Option | Description |
 | :- | :- |
-| `--client` | Specify registry client to use ('npm'|'yarn') (default 'npm'). |
+| `--client` | Specify registry client to use (default 'npm', or 'yarn'). |
 
 > Run `npx rjs-releasing help` to display information about the CLI.
 
