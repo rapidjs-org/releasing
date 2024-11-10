@@ -3,30 +3,28 @@ const assert = require("assert");
 const api = require("./lib/api");
 
 
-assert.deepEqual(
-    api.getIncrement(require("path").join(__dirname, "./test-package"), "major").repositoryUrl,
-    "https://github.com/rapidjs-org/releasing"
-);
+const REPO_PACKAGE_PATH = require("path").join(__dirname, "./test/repo");
+
 
 assert.deepEqual(
-    api.getIncrement(require("path").join(__dirname, "./test-package"), "major").nextTag,
+    api.getIncrement(REPO_PACKAGE_PATH, "major").nextTag,
     "v1.0.0"
 );
 
 assert.deepEqual(
-    api.getIncrement(require("path").join(__dirname, "./test-package"), "major").nextVersion,
+    api.getIncrement(REPO_PACKAGE_PATH, "major").nextVersion,
     "1.0.0"
 );
 
 assert.deepEqual(
-    api.getIncrement(require("path").join(__dirname, "./test-package"), "minor").nextVersion,
+    api.getIncrement(REPO_PACKAGE_PATH, "minor").nextVersion,
     "0.6.0"
 );
 
 assert.deepEqual(
-    api.getIncrement(require("path").join(__dirname, "./test-package"), "patch").nextVersion,
+    api.getIncrement(REPO_PACKAGE_PATH, "patch").nextVersion,
     "0.5.1"
 );
 
 
-console.log("\x1b[32mAPI tests succeeded.\x1b[0m");
+console.log("\x1b[32mUnit tests succeeded.\x1b[0m");

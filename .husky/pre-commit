@@ -1,0 +1,2 @@
+npm run reset-test-versions
+npm test

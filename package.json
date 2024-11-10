@@ -1,34 +1,39 @@
 {
-    "name": "@rapidjs.org/releasing",
-    "version": "0.1.0",
-    "description": "Java- and TypeScript package release helper utility.",
-    "author": "Thassilo Martin Schiepanski",
-    "homepage": "https://github.com/rapidjs-org/releasing#readme",
-    "keywords": [
-        "releasing",
-        "release",
-        "npm"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/rapidjs-org/releasing.git"
-    },
-    "bugs": {
-        "url": "https://github.com/rapidjs-org/releasing/issues"
-    },
-	"license": "Apache-2.0",
-    "main": "./lib/api.js",
-    "bin": {
-        "rjs-releasing": "./lib/cli.js"
-    },
-    "files": [
-        "./lib/"
-    ],
-    "scripts": {
-        "test:api": "node unit.test.js",
-        "test": "npm run test:api",
-        "test-cli:repo": "./rjs-releasing.sh ./test/repo --github --dry-run --stacktrace",
-        "test-cli:monorepo": "./rjs-releasing.sh ./test/monorepo --github --dry-run --stacktrace",
-        "release": "./rjs-releasing.sh --github"
-    }
+  "name": "@rapidjs.org/releasing",
+  "version": "0.1.0",
+  "description": "Java- and TypeScript package release helper utility.",
+  "author": "Thassilo Martin Schiepanski",
+  "homepage": "https://github.com/rapidjs-org/releasing#readme",
+  "keywords": [
+    "releasing",
+    "release",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapidjs-org/releasing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rapidjs-org/releasing/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "./lib/api.js",
+  "bin": {
+    "rjs-releasing": "./lib/cli.js"
+  },
+  "files": [
+    "./lib/"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "test:api": "node unit.test.js",
+    "test": "npm run test:api",
+    "test-cli:repo": "./rjs-releasing.sh ./test/repo --github --dry-run --stacktrace",
+    "test-cli:monorepo": "./rjs-releasing.sh ./test/monorepo --github --dry-run --stacktrace",
+    "reset-test-versions": "node ./scripts/reset-test-versions.js",
+    "release": "./rjs-releasing.sh --github"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6"
+  }
 }
