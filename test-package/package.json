@@ -1,7 +1,4 @@
 {
     "name": "@example.org/example",
-    "version": "0.1.0",
-    "repository": {
-        "url": "git+https://github.com/rapidjs-org/releasing.git"
-    }
+    "version": "0.1.0"
 }
