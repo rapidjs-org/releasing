@@ -35,6 +35,17 @@ Execute the release command int the repository root (also in monorepos).
 
 > Run `npx rjs-releasing help` to display information about the CLI.
 
+### Monorepo package filter
+
+In order to whitelist paclages to consider for a balanced release, provide a `release.deps.json`. All packages (paths) stated in an array are filtered for the release. Any other package in the monorepo setup is then ignored.
+
+``` json
+[
+  "./packages/b",
+  "./packages/a"
+]
+```
+
 ##
 
 <sub>© Thassilo Martin Schiepanski</sub>
