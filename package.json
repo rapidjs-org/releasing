@@ -27,7 +27,8 @@
     "scripts": {
         "test:api": "node unit.test.js",
         "test": "npm run test:api",
-        "test-cli": "./rjs-releasing.sh ./test-package --github --dry-run --stacktrace",
+        "test-cli:repo": "./rjs-releasing.sh ./test/repo --github --dry-run --stacktrace",
+        "test-cli:monorepo": "./rjs-releasing.sh ./test/monorepo --github --dry-run --stacktrace",
         "release": "./rjs-releasing.sh --github"
     }
 }

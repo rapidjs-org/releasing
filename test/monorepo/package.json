@@ -1,6 +1,8 @@
 {
-    "name": "@example.org/example",
-    "version": "0.1.0",
+    "private": true,
+    "workspaces": [
+        "./packages/*"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/rapidjs-org/releasing.git"
