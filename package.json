@@ -27,7 +27,7 @@
     "scripts": {
         "test:api": "node unit.test.js",
         "test": "npm run test:api",
-        "test-cli": "./rjs-releasing.sh ./test-package --github --stacktrace",
+        "test-cli": "./rjs-releasing.sh ./test-package --github --dry-run --stacktrace",
         "release": "./rjs-releasing.sh --github"
     }
 }

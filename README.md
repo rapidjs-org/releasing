@@ -22,6 +22,7 @@ npm install -D @rapidjs.org/releasing
 | :- | :- |
 | `--github` | Open a GitHub release creation for a package tag. |
 | `--stacktrace` | Always print the full stack trace of errors. |
+| `--dry-run` | Perform a publish cycle without an actual push to the registry (NPM only). |
 
 | Option | Description |
 | :- | :- |
